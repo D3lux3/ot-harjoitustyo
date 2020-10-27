@@ -1,0 +1,126 @@
+commit 631db1dbbae3ea65039a957b1f466eeb260df337
+Author: D3lux3 <38981163+D3lux3@users.noreply.github.com>
+Date:   Wed Oct 28 00:27:36 2020 +0200
+
+    Removed file1 and renamed file2 -> file22
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 75eed5a387f113ea97edbe77afde4a6c450161fc
+Author: D3lux3 <38981163+D3lux3@users.noreply.github.com>
+Date:   Wed Oct 28 00:22:32 2020 +0200
+
+    Fixed file placement
+
+ file1 | 0
+ file2 | 0
+ file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 50df680971a114695b88dc539c10048cc3a6b4b1
+Author: D3lux3 <38981163+D3lux3@users.noreply.github.com>
+Date:   Wed Oct 28 00:21:16 2020 +0200
+
+    Fixed placement
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit dcba01e55d931645ec2550664d228132efbdef35
+Author: D3lux3 <38981163+D3lux3@users.noreply.github.com>
+Date:   Wed Oct 28 00:20:00 2020 +0200
+
+    Added tiedostoja
+
+ file1 | 0
+ file2 | 0
+ file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit f1de232e9c50883f09a848c3732e7ecf058c8e89
+Author: D3lux3 <38981163+D3lux3@users.noreply.github.com>
+Date:   Wed Oct 28 00:07:11 2020 +0200
+
+    add -p training
+
+ eka.txt    | 1 -
+ kolmas.txt | 2 ++
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit 3819fc5c4e082115a900a1228b423d3e1e510790
+Author: D3lux3 <38981163+D3lux3@users.noreply.github.com>
+Date:   Wed Oct 28 00:01:08 2020 +0200
+
+    renamed tiedosto -> eka
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 7d3975e47e43c775c6a6ba433e27b7ea3b582685
+Author: D3lux3 <38981163+D3lux3@users.noreply.github.com>
+Date:   Tue Oct 27 23:59:29 2020 +0200
+
+    Removed toinen.txt
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 41402d7e16c325a51cc25dd1f17a79c238102917
+Author: D3lux3 <38981163+D3lux3@users.noreply.github.com>
+Date:   Tue Oct 27 23:55:35 2020 +0200
+
+    changes to tiedosto
+
+ tiedosto.txt | 155 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 154 insertions(+), 1 deletion(-)
+
+commit ef075f3fd9db047b526ee1cc01f16eb15344aa31
+Author: D3lux3 <38981163+D3lux3@users.noreply.github.com>
+Date:   Tue Oct 27 23:46:11 2020 +0200
+
+    Added stuff and a random file
+
+ stuff/jokin.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ccd937281abf2c6281ba405d869e71f711f539a5
+Author: D3lux3 <38981163+D3lux3@users.noreply.github.com>
+Date:   Tue Oct 27 23:45:41 2020 +0200
+
+    modified toinen and kolmas
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 9b2c90baa4242c8143daef76056494973b2c20f2
+Author: D3lux3 <38981163+D3lux3@users.noreply.github.com>
+Date:   Tue Oct 27 23:45:00 2020 +0200
+
+    added kolmas.txt
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 1cb7979d601dabbd54640329d3a4461781913fa9
+Author: D3lux3 <38981163+D3lux3@users.noreply.github.com>
+Date:   Tue Oct 27 23:41:08 2020 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 178b13230b64e00c4aea7bde473cb648f0afd88d
+Author: D3lux3 <38981163+D3lux3@users.noreply.github.com>
+Date:   Tue Oct 27 23:36:52 2020 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
