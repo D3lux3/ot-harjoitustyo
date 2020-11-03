@@ -1,7 +1,7 @@
 # Otsikko :comet:
 
 ## Dokumentaatio 📝
-
+- [Tuntikirjanpito](https://github.com/D3lux3/ot-harjoitustyo/blob/master/documentation/tuntikirjanpito.md) :hourglass_flowing_sand:
 
 ## Laskari tehtävät :pen:
 ### Viikko 1
