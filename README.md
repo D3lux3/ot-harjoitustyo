@@ -1,4 +1,7 @@
-# Otsikko
+# Otsikko :comet:
+
+## Dokumentaatio 📝
+
 
 ## Laskari tehtävät :pen:
 ### Viikko 1
