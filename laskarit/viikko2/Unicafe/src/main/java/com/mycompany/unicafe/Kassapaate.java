@@ -71,4 +71,6 @@ public class Kassapaate {
     public int edullisiaLounaitaMyyty() {
         return edulliset;
     }
+
+
 }
