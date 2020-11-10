@@ -14,3 +14,10 @@
 - [Repo](https://github.com/D3lux3/ot-harjoitustyo/tree/master/laskarit/viikko2/Unicafe)
 
 - [Jacoco kattavuus](https://github.com/D3lux3/ot-harjoitustyo/blob/master/laskarit/viikko2/Unicafe/Jacocot.jpg)
+
+### Viikko 3
+- [Repo](https://github.com/D3lux3/ot-harjoitustyo/tree/master/laskarit/viikko3)
+
+- [Monopoli](https://github.com/D3lux3/ot-harjoitustyo/blob/master/laskarit/viikko3/monopoli%20uml.png)
+- [Machine sekvenssikaavio](https://github.com/D3lux3/ot-harjoitustyo/blob/master/laskarit/viikko3/sekvenssi%20machine.png)
+- [Machine sekvenssikaavio](https://github.com/D3lux3/ot-harjoitustyo/blob/master/laskarit/viikko3/sekvenssi%20kioski.png)
