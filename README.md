@@ -2,8 +2,9 @@
 
 ## Dokumentaatio 📝
 - [Tuntikirjanpito](https://github.com/D3lux3/ot-harjoitustyo/blob/master/documentation/tuntikirjanpito.md) :hourglass_flowing_sand:
+- [Vaatimusmäärittely](https://github.com/D3lux3/ot-harjoitustyo/blob/master/documentation/vaatimusmaarittely.md)
 
-## Laskari tehtävät :pen:
+## Laskaritehtävät :pen:
 ### Viikko 1
 - [komentorivi.txt](https://github.com/D3lux3/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
