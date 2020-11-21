@@ -30,6 +30,11 @@ public class EndGameScene {
         PlatformerLabel label = new PlatformerLabel("Enter name" );
 
         button.setOnMouseClicked((event -> {
+            // Blocks empty name and zero score from being saved to database.
+            if (textField.getText().isEmpty() || score == 0) {
+                backToMain();
+                return;
+            }
             System.out.println(textField.getText() + " Score: " + score);
             backToMain();
         }));
@@ -42,12 +47,13 @@ public class EndGameScene {
 
 
         //Reset gamescore after ending game.
-        this.gameLogic.resetScore();
+
 
         return scene;
     }
 
     private void backToMain() {
+        this.gameLogic.resetScore();
         stage.setScene(new Menu(stage, this.gameLogic).getMenuScene());
     }
 
