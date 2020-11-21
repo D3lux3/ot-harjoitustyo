@@ -1,5 +1,6 @@
 package menu;
 
+import game.GameLogic;
 import game.GameScene;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -18,9 +19,11 @@ public class Menu {
     private PlatformerButton highscoreButton;
     private PlatformerButton exitButton;
     private Stage stage;
+    private GameLogic gameLogic;
 
-    public Menu(Stage stage) {
+    public Menu(Stage stage, GameLogic gameLogic) {
         this.stage = stage;
+        this.gameLogic = gameLogic;
         this.startButton = new PlatformerButton("START");
         this.highscoreButton = new PlatformerButton("HISCORES");
         this.exitButton = new PlatformerButton("EXIT");
@@ -29,7 +32,7 @@ public class Menu {
 
     private void setButtonHandlers() {
         this.startButton.setOnMousePressed((event -> {
-            stage.setScene(new GameScene().getGameScene());
+            stage.setScene(new GameScene(gameLogic).getGameScene());
         }));
 
         exitButton.setOnMousePressed((event -> {
@@ -37,7 +40,7 @@ public class Menu {
         }));
 
         highscoreButton.setOnMousePressed((event -> {
-            stage.setScene(new Hiscores(stage).getHighscoreScene());
+            stage.setScene(new Hiscores(stage, gameLogic).getHighscoreScene());
         }));
 
     }

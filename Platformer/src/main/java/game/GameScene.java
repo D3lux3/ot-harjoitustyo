@@ -10,39 +10,38 @@ import menu.ui.PlatformerLabel;
 
 public class GameScene {
 
-    private int score;
-    public GameScene() {
-        this.score = 0;
+    private GameLogic gameLogic;
+
+    public GameScene(GameLogic gameLogic) {
+        this.gameLogic = gameLogic;
     }
 
     public Scene getGameScene() {
         BorderPane borderPane = new BorderPane();
         borderPane.setPrefSize(500, 500);
-        this.score = 0;
         PlatformerButton button = new PlatformerButton("Press");
-        PlatformerLabel label = new PlatformerLabel("" + score);
+        PlatformerButton endGame = new PlatformerButton("End");
+        PlatformerLabel label = new PlatformerLabel("" + this.gameLogic.getScore());
 
 
         button.setOnMouseClicked((event -> {
-            this.score++;
-            label.setText("" + score);
+            this.gameLogic.addScore();
+            label.setText("" + this.gameLogic.getScore());
+        }));
+
+        endGame.setOnMouseClicked((event -> {
+            EndGameScene endGameScene = new EndGameScene(gameLogic, gameLogic.getStage());
+            this.gameLogic.changeScene(endGameScene.getEndGameScene(this.gameLogic.getScore()));
         }));
 
         VBox vbox = new VBox();
         vbox.setAlignment(Pos.CENTER);
-        vbox.getChildren().addAll(label, button);
+        vbox.getChildren().addAll(label, button, endGame);
         borderPane.setCenter(vbox);
         Scene scene = new Scene(borderPane);
 
         return scene;
     }
 
-    public int getScore() {
-        return this.score;
-    }
-
-    public void clickOnce() {
-        this.score++;
-    }
 
 }

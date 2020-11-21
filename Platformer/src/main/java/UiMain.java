@@ -1,3 +1,4 @@
+import game.GameLogic;
 import javafx.application.Application;
 import javafx.scene.input.KeyCode;
 import javafx.stage.Stage;
@@ -8,12 +9,13 @@ import java.util.HashMap;
 public class UiMain extends Application {
 
     private HashMap<KeyCode, Boolean> keys = new HashMap<KeyCode, Boolean>();
+    private GameLogic gameLogic;
 
     public void start(Stage stage) {
 
         stage.setTitle("Rottasimulaattori");
-
-        stage.setScene(new Menu(stage).getMenuScene());
+        this.gameLogic = new GameLogic(stage);
+        stage.setScene(new Menu(stage, gameLogic).getMenuScene());
 
 
         stage.show();

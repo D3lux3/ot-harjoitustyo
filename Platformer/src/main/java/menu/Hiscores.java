@@ -1,5 +1,6 @@
 package menu;
 
+import game.GameLogic;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -17,8 +18,10 @@ public class Hiscores {
 
     private final String BG_PATH = "yellow_panel.png";
     private Stage stage;
+    private GameLogic gameLogic;
 
-    public Hiscores(Stage stage) {
+    public Hiscores(Stage stage, GameLogic gameLogic) {
+        this.gameLogic = gameLogic;
         this.stage = stage;
     }
 
@@ -71,7 +74,7 @@ public class Hiscores {
         HBox hBox = new HBox();
         PlatformerButton button = new PlatformerButton("MENU");
         button.setOnMousePressed((mouseEvent -> {
-            stage.setScene(new Menu(stage).getMenuScene());
+            stage.setScene(new Menu(stage, gameLogic).getMenuScene());
         }));
         hBox.getChildren().add(button);
         hBox.setAlignment(Pos.CENTER);
