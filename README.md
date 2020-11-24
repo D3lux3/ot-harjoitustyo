@@ -1,4 +1,4 @@
-# Rottasimulaattori :comet:
+# Rottasimulaattori :rat: :moneybag:
 
 ## Dokumentaatio 📝
 - [Tuntikirjanpito](https://github.com/D3lux3/ot-harjoitustyo/blob/master/documentation/tuntikirjanpito.md) :hourglass_flowing_sand:
