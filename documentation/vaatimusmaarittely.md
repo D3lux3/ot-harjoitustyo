@@ -8,3 +8,17 @@ Sovellukseni tulee olemaan 2d seikkailu peli. Pelissä pelataan rotalla, jonka t
 
 ### Käyttöliittymäluonnos
 ![alt text](https://github.com/D3lux3/ot-harjoitustyo/tree/master/documentation/luonnos.png "UML luonnos")
+
+## Toiminallisuus
+
+### Menunäkymä
+- Pelaaja voi aloittaa pelin
+- Katsoa hiscoret
+- Poistua pelistä
+
+### Hiscore näkymä
+- Pelaaja näkee top 10 parasta pelitulosta.
+- Painike, josta pelaaja pääsee tarvittaessa takaisin menunäkymään.
+- Pelitulokset ladataan SQL tietokannasta.
+### Pelin lopetusnäkymä
+- Sisältää tekstikentän pelaajan nimeä varten, joka talletetaan pisteiden kanssa tietokantaan.
