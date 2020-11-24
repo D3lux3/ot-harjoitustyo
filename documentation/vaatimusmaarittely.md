@@ -2,9 +2,9 @@
 
 ### Sovelluksen tarkoitus
 
-Sovellukseni tulee olemaan 2d seikkailu peli. Pelin peruslogiikka ja käyttöliittymät ovat vielä auki. Todennäkösesti pelissä tullaan etsimään erillaisia esineitä joista saa X määrän pisteitä.
+Sovellukseni tulee olemaan 2d seikkailu peli. Pelissä pelataan rotalla, jonka tarkoitus on kerätä kela-kolikoita, josta pelaaja saa pisteitä. Pelaaja menettää elämänpisteitä osuessaan työpaikkaan. Elämänpisteitä saa, kun kerää halpoja makaroonipaketteja.
 
 
 
-### Käyttöliittymä 
-Päivitän tätä heti kun, pelin ulkonäkö ja käyttöliittymät selviää. Peli tullaan toteuttamaan JavaFxällä.
+### Käyttöliittymäluonnos
+![alt text](https://github.com/D3lux3/ot-harjoitustyo/tree/master/documentation/luonnos.png "UML luonnos")
