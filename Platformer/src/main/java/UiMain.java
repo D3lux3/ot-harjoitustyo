@@ -17,7 +17,6 @@ public class UiMain extends Application {
         this.gameLogic = new GameLogic(stage);
         stage.setScene(new Menu(stage, gameLogic).getMenuScene());
 
-
         stage.show();
     }
 

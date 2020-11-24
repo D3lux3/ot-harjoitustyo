@@ -44,4 +44,8 @@ public class Player {
     public void setScore(int score) {
         this.score = score;
     }
+
+    public String toString() {
+        return this.name + " | " + this.score;
+    }
 }

@@ -14,6 +14,10 @@ public class GameLogic {
         this.stage = stage;
     }
 
+    public GameLogic() {
+        this.score = 0;
+    }
+
     public void addScore() {
         this.score++;
     }

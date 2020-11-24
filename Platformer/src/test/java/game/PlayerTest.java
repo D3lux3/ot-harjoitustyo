@@ -23,4 +23,17 @@ public class PlayerTest {
     public void scoreIsCorrect() {
         assertEquals(14, player.getScore());
     }
+
+    @Test
+    public void nameSetChangesName() {
+        player.setName("Test");
+        assertEquals("Test", player.getName());
+    }
+
+    @Test
+    public void scoreSetChangesScore() {
+        player.setScore(100);
+        assertEquals(100, player.getScore());
+    }
+
 }
