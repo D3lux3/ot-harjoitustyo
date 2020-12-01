@@ -2,7 +2,6 @@ package game;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import menu.Menu;
 
 public class GameLogic {
 

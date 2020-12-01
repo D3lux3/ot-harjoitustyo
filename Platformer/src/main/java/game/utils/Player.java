@@ -1,4 +1,4 @@
-package game;
+package game.utils;
 
 public class Player {
 
@@ -13,12 +13,19 @@ public class Player {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
         Player player = (Player) o;
 
-        if (getScore() != player.getScore()) return false;
+        if (getScore() != player.getScore()) {
+            return false;
+        }
+
         return getName() != null ? getName().equals(player.getName()) : player.getName() == null;
     }
 

@@ -2,7 +2,7 @@ import game.GameLogic;
 import javafx.application.Application;
 import javafx.scene.input.KeyCode;
 import javafx.stage.Stage;
-import menu.Menu;
+import ui.Menu;
 
 import java.util.HashMap;
 
