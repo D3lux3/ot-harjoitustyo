@@ -1,14 +1,17 @@
-package game;
+package ui;
 
+import data.HiscoresDao;
+import game.GameLogic;
+import game.utils.Player;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import menu.Menu;
-import menu.ui.PlatformerButton;
-import menu.ui.PlatformerLabel;
+import ui.Menu;
+import ui.controls.PlatformerButton;
+import ui.controls.PlatformerLabel;
 
 public class EndGameScene {
 
@@ -35,6 +38,9 @@ public class EndGameScene {
                 backToMain();
                 return;
             }
+            HiscoresDao hiscoresDao = new HiscoresDao("hiscores");
+            hiscoresDao.saveScores(new Player(textField.getText(), score));
+
             System.out.println(textField.getText() + " Score: " + score);
             backToMain();
         }));

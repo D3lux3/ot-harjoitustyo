@@ -1,12 +1,12 @@
-package game;
+package ui;
 
+import game.GameLogic;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
-import menu.ui.PlatformerButton;
-import menu.ui.PlatformerLabel;
+import ui.controls.PlatformerButton;
+import ui.controls.PlatformerLabel;
 
 public class GameScene {
 

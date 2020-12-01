@@ -1,6 +1,8 @@
-package menu;
+package ui;
 
+import data.HiscoresDao;
 import game.GameLogic;
+import game.utils.Player;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -8,8 +10,8 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import menu.ui.PlatformerButton;
-import menu.ui.PlatformerLabel;
+import ui.controls.PlatformerButton;
+import ui.controls.PlatformerLabel;
 
 import java.util.ArrayList;
 
@@ -83,12 +85,10 @@ public class Hiscores {
     }
 
     private ArrayList<PlatformerLabel> getLabels() {
-        String[] data = new String[]{"Dani;50", "Patrick;30", "Kani;100",
-                "Anni;5", "Haisu;0", "Kit;12", "Mummo;34", "Pappa;0", "Hattu;12", "jdfgh;34"};
+        HiscoresDao dao = new HiscoresDao("hiscores");
         ArrayList<PlatformerLabel> list = new ArrayList<>();
-        for (String string : data) {
-            String[] splitted =  string.split(";");
-            list.add(new PlatformerLabel(splitted[0] + " \t " + splitted[1]));
+        for (Player player : dao.getScores()) {
+            list.add(new PlatformerLabel(player.toString()));
         }
         return list;
     }

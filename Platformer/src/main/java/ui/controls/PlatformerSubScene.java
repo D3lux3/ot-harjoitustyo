@@ -1,4 +1,4 @@
-package menu.ui;
+package ui.controls;
 
 import javafx.scene.SubScene;
 import javafx.scene.image.Image;
