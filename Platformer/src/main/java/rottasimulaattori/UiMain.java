@@ -1,8 +1,10 @@
-import game.GameLogic;
+package rottasimulaattori;
+
+import rottasimulaattori.game.GameLogic;
 import javafx.application.Application;
 import javafx.scene.input.KeyCode;
 import javafx.stage.Stage;
-import ui.Menu;
+import rottasimulaattori.ui.Menu;
 
 import java.util.HashMap;
 

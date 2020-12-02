@@ -1,4 +1,4 @@
-package game;
+package rottasimulaattori.game;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;

@@ -1,4 +1,4 @@
-package ui.controls;
+package rottasimulaattori.ui.controls;
 
 import javafx.scene.control.Label;
 import javafx.scene.text.Font;

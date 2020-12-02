@@ -1,17 +1,16 @@
-package ui;
+package rottasimulaattori.ui;
 
-import data.HiscoresDao;
-import game.GameLogic;
-import game.utils.Player;
+import rottasimulaattori.data.HiscoresDao;
+import rottasimulaattori.game.GameLogic;
+import rottasimulaattori.game.utils.Player;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import ui.Menu;
-import ui.controls.PlatformerButton;
-import ui.controls.PlatformerLabel;
+import rottasimulaattori.ui.controls.PlatformerButton;
+import rottasimulaattori.ui.controls.PlatformerLabel;
 
 public class EndGameScene {
 
@@ -52,7 +51,7 @@ public class EndGameScene {
         Scene scene = new Scene(borderPane);
 
 
-        //Reset gamescore after ending game.
+        //Reset gamescore after ending rottasimulaattori.game.
 
 
         return scene;

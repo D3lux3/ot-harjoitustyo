@@ -1,4 +1,4 @@
-package game.utils;
+package rottasimulaattori.game.utils;
 
 public class Player {
 

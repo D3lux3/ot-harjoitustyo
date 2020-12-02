@@ -1,6 +1,6 @@
-package ui;
+package rottasimulaattori.ui;
 
-import game.GameLogic;
+import rottasimulaattori.game.GameLogic;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -9,8 +9,8 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
-import ui.controls.PlatformerButton;
-import ui.controls.PlatformerSubScene;
+import rottasimulaattori.ui.controls.PlatformerButton;
+import rottasimulaattori.ui.controls.PlatformerSubScene;
 
 public class Menu {
 

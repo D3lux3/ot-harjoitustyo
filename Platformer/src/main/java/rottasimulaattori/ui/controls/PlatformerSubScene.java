@@ -1,4 +1,4 @@
-package ui.controls;
+package rottasimulaattori.ui.controls;
 
 import javafx.scene.SubScene;
 import javafx.scene.image.Image;

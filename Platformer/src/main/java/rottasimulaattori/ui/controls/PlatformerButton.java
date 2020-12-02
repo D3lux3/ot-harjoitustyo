@@ -1,4 +1,4 @@
-package ui.controls;
+package rottasimulaattori.ui.controls;
 import javafx.scene.control.Button;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.text.Font;

@@ -1,6 +1,6 @@
-package data;
+package rottasimulaattori.data;
 
-import game.utils.Player;
+import rottasimulaattori.game.utils.Player;
 
 import java.sql.*;
 import java.util.ArrayList;

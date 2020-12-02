@@ -1,12 +1,12 @@
-package ui;
+package rottasimulaattori.ui;
 
-import game.GameLogic;
+import rottasimulaattori.game.GameLogic;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
-import ui.controls.PlatformerButton;
-import ui.controls.PlatformerLabel;
+import rottasimulaattori.ui.controls.PlatformerButton;
+import rottasimulaattori.ui.controls.PlatformerLabel;
 
 public class GameScene {
 
