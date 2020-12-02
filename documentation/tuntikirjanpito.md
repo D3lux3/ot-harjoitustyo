@@ -9,4 +9,6 @@
 | 17.11. | 3    | Tehty referenssipeli, jota voi testata ja käyttää hiscorejen tallennusta varten|
 | 21.11. | 4    | Saatu pääasiassa tarvittavat näkymät käyttöliittymää varten valmiiksi|
 | 24.11. | 8    | Tietokantatoteutus aloitettu, tutustuttu SQL kieleen ja JDBC & SQLiteen.|
-| yht   | 32   | | 
+| 01.12. | 10    | Tietokanta toimii nyt täydellisesti.|
+| 02.12. | 2    | Hiottu pakkauksia ja ohjelman sisäistä rakennetta.|
+| yht   | 44   | | 
