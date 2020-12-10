@@ -172,14 +172,14 @@ public class GameScene {
      */
     private void update() {
         scoreLabel.setText("Score: " + this.gameLogic.getScore());
-        if ((keyPressed(KeyCode.W) || keyPressed(KeyCode.SPACE)) && player.getTranslateY() >= 5) {
+        if ((keyPressed(KeyCode.UP) || keyPressed(KeyCode.W) || keyPressed(KeyCode.SPACE)) && player.getTranslateY() >= 5) {
             this.player.jump();
         }
-        if (keyPressed(KeyCode.A) && player.getTranslateX() >= 5) {
+        if ((keyPressed(KeyCode.LEFT) ||  keyPressed(KeyCode.A)) && player.getTranslateX() >= 5) {
             this.player.moveX(-5, platforms);
         }
 
-        if (keyPressed(KeyCode.D)  && player.getTranslateX() + 40 <= levelWidth - 5) {
+        if ((keyPressed(KeyCode.RIGHT) ||keyPressed(KeyCode.D))  && player.getTranslateX() + 40 <= levelWidth - 5) {
             this.player.moveX(5, platforms);
         }
 
