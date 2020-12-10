@@ -17,6 +17,7 @@ public class GameLogic {
         this.score = 0;
     }
 
+
     public void addScore() {
         this.score++;
     }
