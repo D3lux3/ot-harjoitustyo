@@ -10,12 +10,16 @@ public class Entity extends Rectangle {
 
     public Entity(double x, double y) {
         super(x,y);
-        this.setFill(Color.GREEN);
+        this.setFill(Color.color(Math.random(), Math.random(), Math.random()));
     }
 
     public void setBGImage(String path) {
-        Image image = new Image(path);
-        this.setFill(new ImagePattern(image));
+        try {
+            Image image = new Image(path);
+            this.setFill(new ImagePattern(image));
+        } catch (Error e) {
+            this.setFill(Color.color(Math.random(), Math.random(), Math.random()));
+        }
     }
 
 }

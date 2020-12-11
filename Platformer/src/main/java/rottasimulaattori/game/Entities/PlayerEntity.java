@@ -8,6 +8,7 @@ public class PlayerEntity extends Entity {
 
     private boolean canJump;
     private Point2D playerVelocity;
+    private boolean noImg;
 
     public PlayerEntity(double x, double y) {
         super(x, y);
@@ -16,11 +17,24 @@ public class PlayerEntity extends Entity {
         this.canJump = true;
     }
 
+    public PlayerEntity(double x, double y, boolean nobg) {
+        super(x, y);
+        this.noImg = nobg;
+        this.playerVelocity  = new Point2D(0,0);
+        this.canJump = true;
+    }
+
     private void handleLeftAnimation() {
+        if (noImg) {
+            return;
+        }
         this.setBGImage("rottapngLeft.png");
     }
 
     private void handleRightAnimation() {
+        if (noImg) {
+            return;
+        }
         this.setBGImage("rottapng.png");
     }
 
