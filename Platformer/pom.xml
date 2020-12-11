@@ -4,7 +4,6 @@
     <groupId>org.example</groupId>
     <artifactId>Platformer</artifactId>
     <version>2.0</version>
-
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
@@ -32,8 +31,6 @@
     </dependencies>
     <build>
         <plugins>
-<<<<<<< HEAD
-=======
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -76,8 +73,6 @@
                     </descriptorRefs>
                 </configuration>
             </plugin>
->>>>>>> 3e5f666ff80a1226f6f29f9ffd7dacf649d4be86
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
