@@ -11,4 +11,7 @@
 | 24.11. | 8    | Tietokantatoteutus aloitettu, tutustuttu SQL kieleen ja JDBC & SQLiteen.|
 | 01.12. | 10    | Tietokanta toimii nyt täydellisesti.|
 | 02.12. | 2    | Hiottu pakkauksia ja ohjelman sisäistä rakennetta.|
-| yht   | 44   | | 
+| 08.12. | 3    | Luin omat vertaispalautteet ja annoin vertaispalautetta.|
+| 09.12. | 5    | Tutustuttu 2D pelien tekemiseen.|
+| 10.12. | 11    | Pelin peli osuus nyt tehtynä.|
+| yht   | 63   | | 
