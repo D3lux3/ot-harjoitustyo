@@ -16,8 +16,21 @@ public class PlayerEntity extends Entity {
         this.canJump = true;
     }
 
+    private void handleLeftAnimation() {
+        this.setBGImage("rottapngLeft.png");
+    }
+
+    private void handleRightAnimation() {
+        this.setBGImage("rottapng.png");
+    }
+
     public void moveX(int value, List<Entity> platforms) {
         boolean movingRight = value > 0;
+        if (movingRight) {
+            this.handleRightAnimation();
+        } else {
+            this.handleLeftAnimation();
+        }
         for (int i = 0; i < Math.abs(value); i++) {
             for (Entity platform : platforms) {
                 if (this.getBoundsInParent().intersects(platform.getBoundsInParent())) {
