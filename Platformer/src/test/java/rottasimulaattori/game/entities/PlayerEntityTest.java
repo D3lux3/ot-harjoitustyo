@@ -1,4 +1,4 @@
-package rottasimulaattori.game.Entities;
+package rottasimulaattori.game.entities;
 
 import org.junit.Before;
 import org.junit.Test;

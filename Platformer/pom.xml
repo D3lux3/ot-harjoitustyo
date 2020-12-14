@@ -109,6 +109,7 @@
                     <excludes>
                         <exclude>rottasimulaattori/ui/*</exclude>
                         <exclude>rottasimulaattori/ui/controls/*</exclude>
+                        <exclude>rottasimulaattori/game/utils/Level</exclude>
                     </excludes>
                 </configuration>
                 <executions>

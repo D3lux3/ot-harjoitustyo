@@ -6,4 +6,5 @@
 
 <suppressions>
     <suppress files="rottasimulaattori.ui.*" checks="[a-zA-Z0-9]*"/>
+    <suppress files="rottasimulaattori.game.utils.Level" checks="[a-zA-Z0-9]*"/>
 </suppressions>

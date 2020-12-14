@@ -1,4 +1,4 @@
-package rottasimulaattori.game.Entities;
+package rottasimulaattori.game.entities;
 
 import javafx.geometry.Point2D;
 
@@ -13,15 +13,23 @@ public class PlayerEntity extends Entity {
     public PlayerEntity(double x, double y) {
         super(x, y);
         this.setBGImage("rottapng.png");
-        this.playerVelocity  = new Point2D(0,0);
+        this.playerVelocity  = new Point2D(0, 0);
         this.canJump = true;
     }
 
     public PlayerEntity(double x, double y, boolean nobg) {
         super(x, y);
         this.noImg = nobg;
-        this.playerVelocity  = new Point2D(0,0);
+        this.playerVelocity  = new Point2D(0, 0);
         this.canJump = true;
+    }
+
+    private void handleAnimation(boolean movingRight) {
+        if (movingRight) {
+            this.handleRightAnimation();
+        } else {
+            this.handleLeftAnimation();
+        }
     }
 
     private void handleLeftAnimation() {
@@ -40,11 +48,7 @@ public class PlayerEntity extends Entity {
 
     public void moveX(int value, List<Entity> platforms) {
         boolean movingRight = value > 0;
-        if (movingRight) {
-            this.handleRightAnimation();
-        } else {
-            this.handleLeftAnimation();
-        }
+        this.handleAnimation(movingRight);
         for (int i = 0; i < Math.abs(value); i++) {
             for (Entity platform : platforms) {
                 if (this.getBoundsInParent().intersects(platform.getBoundsInParent())) {
@@ -74,11 +78,11 @@ public class PlayerEntity extends Entity {
                             this.canJump = true;
                             return;
                         }
-                    } else {
-                        if (this.getTranslateY() == platform.getTranslateY() + 60) {
-                            return;
-                        }
                     }
+                    if (this.getTranslateY() == platform.getTranslateY() + 60) {
+                        return;
+                    }
+
                 }
             }
             this.setTranslateY(this.getTranslateY() + (movingDown ? 1 : -1));
@@ -97,6 +101,6 @@ public class PlayerEntity extends Entity {
     }
 
     public void setPlayerVelocity(double x, double y) {
-       playerVelocity = playerVelocity.add(x, y);
+        playerVelocity = playerVelocity.add(x, y);
     }
 }

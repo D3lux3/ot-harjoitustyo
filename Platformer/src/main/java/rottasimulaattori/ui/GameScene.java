@@ -7,10 +7,10 @@ import javafx.scene.paint.Color;
 import rottasimulaattori.game.GameLogic;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
-import rottasimulaattori.game.Entities.CoinEntity;
-import rottasimulaattori.game.Entities.Entity;
+import rottasimulaattori.game.entities.CoinEntity;
+import rottasimulaattori.game.entities.Entity;
 import rottasimulaattori.game.utils.Level;
-import rottasimulaattori.game.Entities.PlayerEntity;
+import rottasimulaattori.game.entities.PlayerEntity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -49,10 +49,10 @@ public class GameScene {
     private void initContent() {
         Entity bg = new Entity(500,500);
         bg.setBGImage("backgroundMenu.png");
-        levelWidth = Level.LEVEL[0].length() * 60;
-        levelHeight = Level.LEVEL.length * 60;
-        for (int i = 0; i < Level.LEVEL.length; i++) {
-            String line = Level.LEVEL[i];
+        levelWidth = Level.firstLevel[0].length() * 60;
+        levelHeight = Level.firstLevel.length * 60;
+        for (int i = 0; i < Level.firstLevel.length; i++) {
+            String line = Level.firstLevel[i];
             for (int j = 0; j < line.length(); j++) {
                 switch(line.charAt(j)) {
                     case '0':
