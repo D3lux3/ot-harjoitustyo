@@ -227,8 +227,12 @@ public class GameScene {
             keys.put(event.getCode(), false);
         }));
         AnimationTimer anim = new AnimationTimer() {
+            long previous = 0;
             @Override
             public void handle(long l) {
+                if (l - previous < 1000000000 / 100) {
+                    return;
+                }
                 update();
                 if (!playerAlive()) {
                     this.stop();
