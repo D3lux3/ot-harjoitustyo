@@ -1,4 +1,6 @@
-<center><h1> Rottasimulaattori :rat: :moneybag:</h1> </center>
+
+<h1 align="center"> Rottasimulaattori :rat: :moneybag:</h1>
+
 
 ## Dokumentaatio 📝
 - [Tuntikirjanpito](https://github.com/D3lux3/ot-harjoitustyo/blob/master/documentation/tuntikirjanpito.md) :hourglass_flowing_sand:
