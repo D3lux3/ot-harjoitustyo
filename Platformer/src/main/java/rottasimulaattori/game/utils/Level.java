@@ -1,7 +1,17 @@
 package rottasimulaattori.game.utils;
 
+/**
+ * Level class.
+ */
 public class Level {
 
+    /**
+     * This is the level ingame. It can be edited easily.
+     * C = Coin
+     * 1 = Platform
+     * 0 = Empty
+     * G = Goal
+     */
     @SuppressWarnings("checkstyle:Indentation")
     public static String[] firstLevel = new String[] {
             "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",

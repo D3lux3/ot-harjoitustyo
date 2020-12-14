@@ -1,11 +1,18 @@
 package rottasimulaattori.game.utils;
 
+/**
+ * Player class for hiscore saving.
+ */
 public class Player {
 
     private String name;
     private int score;
 
-
+    /**
+     * Creates a player object with a name and a score.
+     * @param name
+     * @param score
+     */
     public Player(String name, int score) {
         this.name = name;
         this.score = score;
@@ -36,23 +43,39 @@ public class Player {
         return result;
     }
 
+    /**
+     * Returns player name.
+     * @return
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Sets name for the player object.
+     * @param name
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * Returns player score.
+     * @return
+     */
     public int getScore() {
         return score;
     }
 
+    /**
+     * Sets players score.
+     * @param score
+     */
     public void setScore(int score) {
         this.score = score;
     }
 
     public String toString() {
-        return this.name + " | " + this.score;
+        return this.name + "  " + this.score;
     }
 }

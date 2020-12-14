@@ -10,8 +10,10 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import rottasimulaattori.ui.controls.PlatformerButton;
-import rottasimulaattori.ui.controls.PlatformerSubScene;
 
+/**
+ * Menu scene of the GUI.
+ */
 public class Menu {
 
     private PlatformerButton startButton;
@@ -20,6 +22,11 @@ public class Menu {
     private Stage stage;
     private GameLogic gameLogic;
 
+    /**
+     * Creates Menu object.
+     * @param stage
+     * @param gameLogic
+     */
     public Menu(Stage stage, GameLogic gameLogic) {
         this.stage = stage;
         this.gameLogic = gameLogic;
@@ -29,6 +36,9 @@ public class Menu {
         setButtonHandlers();
     }
 
+    /**
+     * Sets handlers for all the buttons.
+     */
     private void setButtonHandlers() {
         this.startButton.setOnMousePressed((event -> {
             stage.setScene(new GameScene(gameLogic).getGameScene());
@@ -44,6 +54,10 @@ public class Menu {
 
     }
 
+    /**
+     * Returns the menu scene.
+     * @return
+     */
     public Scene getMenuScene() {
         BorderPane borderPane = new BorderPane();
         VBox buttons = new VBox();
@@ -59,19 +73,16 @@ public class Menu {
         logoBox.setAlignment(Pos.CENTER);
         logoBox.setTranslateX(logoBox.getTranslateX() + 25);
         logoBox.setPadding(new Insets(50));
-
-        PlatformerSubScene sub = new PlatformerSubScene();
-
-        startButton.setOnMouseClicked((event -> {
-            sub.closeAndOpen();
-        }));
-
         borderPane.setTop(logoBox);
         borderPane.setCenter(buttons);
         borderPane.setBackground(new Background(getBackgroundImage()));
         return new Scene(borderPane, 500, 500);
     }
 
+    /**
+     * Returns the pixelated Kela logo.
+     * @return
+     */
     private ImageView getLogo() {
         ImageView logo = new ImageView("logo.png");
 
@@ -84,6 +95,10 @@ public class Menu {
         return logo;
     }
 
+    /**
+     * Returns the background image.
+     * @return
+     */
     private BackgroundImage getBackgroundImage() {
         Image bgImage = new Image("backgroundMenu.png");
         BackgroundImage backgroundImage = new BackgroundImage(bgImage, BackgroundRepeat.REPEAT, BackgroundRepeat.REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);

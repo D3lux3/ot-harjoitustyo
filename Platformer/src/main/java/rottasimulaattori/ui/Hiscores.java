@@ -15,18 +15,29 @@ import rottasimulaattori.ui.controls.PlatformerLabel;
 
 import java.util.ArrayList;
 
-
+/**
+ * Hiscores scene for the GUI.
+ */
 public class Hiscores {
 
     private final String BG_PATH = "yellow_panel.png";
     private Stage stage;
     private GameLogic gameLogic;
 
+    /**
+     * Creates Hiscores object.
+     * @param stage
+     * @param gameLogic
+     */
     public Hiscores(Stage stage, GameLogic gameLogic) {
         this.gameLogic = gameLogic;
         this.stage = stage;
     }
 
+    /**
+     * Returns hiscores scene.
+     * @return
+     */
     public Scene getHighscoreScene() {
         BorderPane borderPane = new BorderPane();
         borderPane.setPrefSize(500, 500);
@@ -62,6 +73,10 @@ public class Hiscores {
     }
 
 
+    /**
+     * Returns the header part of the hiscores.
+     * @return
+     */
     private HBox header() {
         HBox hBox = new HBox();
         PlatformerLabel headerText = new PlatformerLabel("Hiscores");
@@ -72,6 +87,10 @@ public class Hiscores {
         return hBox;
     }
 
+    /**
+     * Returns the footer that handles transition back to main menu and adds nice styles for it.
+     * @return
+     */
     private HBox footer() {
         HBox hBox = new HBox();
         PlatformerButton button = new PlatformerButton("MENU");
@@ -84,6 +103,10 @@ public class Hiscores {
         return hBox;
     }
 
+    /**
+     * Gets top 10 players from the Database access object and adds them to an list.
+     * @return
+     */
     private ArrayList<PlatformerLabel> getLabels() {
         HiscoresDao dao = new HiscoresDao("hiscores");
         ArrayList<PlatformerLabel> list = new ArrayList<>();
@@ -93,6 +116,10 @@ public class Hiscores {
         return list;
     }
 
+    /**
+     * Returns the background image.
+     * @return
+     */
     private BackgroundImage getBackgroundImage() {
         Image bgImage = new Image("backgroundMenu.png");
         BackgroundImage backgroundImage = new BackgroundImage(bgImage, BackgroundRepeat.REPEAT, BackgroundRepeat.REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);

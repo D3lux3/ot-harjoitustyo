@@ -5,14 +5,29 @@ import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Rectangle;
 
 
-
+/**
+ * Ingame entity.
+ * It serves as a base class for ingame object.
+ * If you plan to make new entities, just inherit this.
+ */
 public class Entity extends Rectangle {
 
-    public Entity(double x, double y) {
-        super(x, y);
+    /**
+     * Creates an entity with given width and height.
+     * Color of the object will be set at random.
+     * @param width
+     * @param height
+     */
+    public Entity(double width, double height) {
+        super(width, height);
         this.setFill(Color.color(Math.random(), Math.random(), Math.random()));
     }
 
+    /**
+     * Sets a image for the entity.
+     * Custom 2d sprites should be used using this class.
+     * @param path
+     */
     public void setBGImage(String path) {
         try {
             Image image = new Image(path);

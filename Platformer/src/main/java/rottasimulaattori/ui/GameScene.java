@@ -213,6 +213,10 @@ public class GameScene {
         this.gameLogic.changeScene(endGameScene.getEndGameScene(this.gameLogic.getScore()));
     }
 
+    /**
+     * Returns the gamescene.
+     * @return
+     */
     public Scene getGameScene() {
         initContent();
         Scene scene = new Scene(appRoot);
