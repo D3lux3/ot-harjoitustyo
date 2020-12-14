@@ -2,13 +2,9 @@
   <h1 align="center">Rottasimulaattori :rat: :moneybag:</h1>
   
   <p align="center">
-    Kerää mahdollisimman paljon tukikuukausia.
+    Kerää mahdollisimman paljon tukikuukausia ja pääse maaliin.
   </p>
 </div>
-
-## Intro
-
-Ideana on se, että pelaat rotalla, jonka tehtävänä on kerätä mahdollisimman monta tukikuukauskolikkoa ja päästä maaliin. 
 
 ## Dokumentaatio 📝
 - [Käyttöohje](https://github.com/D3lux3/ot-harjoitustyo/blob/master/documentation/kayttoohje.md) :scroll:
