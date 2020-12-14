@@ -6,6 +6,9 @@
   </p>
 </div>
 
+## Intro
+
+Ideana on se, että pelaat rotalla, jonka tehtävänä on kerätä mahdollisimman monta tukikuukauskolikkoa ja päästä maaliin. 
 
 ## Dokumentaatio 📝
 - [Käyttöohje](https://github.com/D3lux3/ot-harjoitustyo/blob/master/documentation/kayttoohje.md) :scroll:
@@ -15,9 +18,18 @@
 <br />
 
 ### Maven komennot :pencil2:
+Projektin testaus tapahtuu komenolla
 
-JavaDoc = ```mvn javadoc:javadoc```
-<br />
-Jacoco = ```mvn test jacoco:report```
-<br />
-Checkstyle = ```mvn jxr:jxr checkstyle:checkstyle```
+```mvn test```
+
+JavaDocin generointi tapahtuu komenolla
+
+```mvn javadoc:javadoc```
+
+Jacoco testikattavuus raportin generointi tapahtuu komennolla
+
+```mvn test jacoco:report```
+
+Checkstylen tarkistus tapahtuu komennolla
+
+ ```mvn jxr:jxr checkstyle:checkstyle```

@@ -14,4 +14,5 @@
 | 08.12. | 3    | Luin omat vertaispalautteet ja annoin vertaispalautetta.|
 | 09.12. | 5    | Tutustuttu 2D pelien tekemiseen.|
 | 10.12. | 11    | Pelin peli osuus nyt tehtynä.|
-| yht   | 63   | | 
+| 14.12. | 4    | JavaDocit ja dokumentaation parantelua|
+| yht   | 67   | | 
