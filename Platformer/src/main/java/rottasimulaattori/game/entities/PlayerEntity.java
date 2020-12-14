@@ -13,6 +13,7 @@ public class PlayerEntity extends Entity {
     private boolean canJump;
     private Point2D playerVelocity;
     private boolean noImg;
+    private boolean alive;
 
     /**
      * Constructor that creates PlayerEntity with given width and height parameters.
@@ -25,6 +26,7 @@ public class PlayerEntity extends Entity {
         this.setBGImage("rottapng.png");
         this.playerVelocity  = new Point2D(0, 0);
         this.canJump = true;
+        this.alive = true;
     }
 
     /**
@@ -40,6 +42,7 @@ public class PlayerEntity extends Entity {
         this.noImg = nobg;
         this.playerVelocity  = new Point2D(0, 0);
         this.canJump = true;
+        this.alive = true;
     }
 
     /**
@@ -153,5 +156,20 @@ public class PlayerEntity extends Entity {
      */
     public void setPlayerVelocity(double x, double y) {
         playerVelocity = playerVelocity.add(x, y);
+    }
+
+    /**
+     * Sets players alive boolean value to false.
+     */
+    public void killPlayer() {
+        this.alive = false;
+    }
+
+    /**
+     * Gets alive boolean.
+     * @return
+     */
+    public boolean getAlive() {
+        return this.alive;
     }
 }

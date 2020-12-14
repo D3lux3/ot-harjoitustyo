@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import rottasimulaattori.game.entities.CoinEntity;
 import rottasimulaattori.game.entities.Entity;
+import rottasimulaattori.game.entities.GoalEntity;
 import rottasimulaattori.game.utils.Level;
 import rottasimulaattori.game.entities.PlayerEntity;
 
@@ -29,6 +30,7 @@ public class GameScene {
     private Label scoreLabel;
     private int levelWidth;
     private int levelHeight;
+    private GoalEntity goal;
 
     /**
      * Constructor that initializes the game. Requires a gamelogic as parameter.
@@ -45,6 +47,10 @@ public class GameScene {
 
     /**
      * Handles level generation and initializes the content.
+     * 0 = Empty
+     * 1 = Platform
+     * C = Coin
+     * G = Goal
      */
     private void initContent() {
         Entity bg = new Entity(500,500);
@@ -64,6 +70,8 @@ public class GameScene {
                     case 'C':
                         coins.add(this.createCoinEntity(j * 36, i * 50));
                         break;
+                    case 'G':
+                        this.goal = this.createGoalEntity(j * 36, i * 50);
                 }
             }
         }
@@ -142,6 +150,21 @@ public class GameScene {
 
 
     /**
+     * Creates a GoalEntity to given parameters.
+     * @param x
+     * @param y
+     * @return
+     */
+    private GoalEntity createGoalEntity(int x, int y) {
+        GoalEntity goalEntity = new GoalEntity();
+        goalEntity.setTranslateX(x);
+        goalEntity.setTranslateY(y);
+        gameRoot.getChildren().add(goalEntity);
+        return goalEntity;
+    }
+
+
+    /**
      * Creates and returns a player entity to given coordinates..
      * @param x
      * @param y
@@ -161,6 +184,7 @@ public class GameScene {
      */
     private boolean playerAlive() {
         if (player.getTranslateY() > levelHeight) {
+            this.player.killPlayer();
             this.gameOver();
             return false;
         }
@@ -188,6 +212,7 @@ public class GameScene {
         }
         this.player.moveY((int)this.player.getVelocity().getY(), platforms);
         checkForCoinCollision();
+        checkForGoalCollision();
     }
 
 
@@ -202,6 +227,21 @@ public class GameScene {
                 this.coins.remove(i);
                 this.gameLogic.addScore();
             }
+        }
+    }
+
+    /**
+     * Check for collision between player and the goal.
+     */
+    private void checkForGoalCollision() {
+        if (this.goal == null) {
+            return;
+        }
+
+        if (player.getBoundsInParent().intersects(this.goal.getBoundsInParent())){
+            this.gameLogic.addScore(10);
+            this.player.killPlayer();
+            this.gameOver();
         }
     }
 
@@ -234,7 +274,7 @@ public class GameScene {
                     return;
                 }
                 update();
-                if (!playerAlive()) {
+                if (!playerAlive() || !player.getAlive()) {
                     this.stop();
                 }
             }
