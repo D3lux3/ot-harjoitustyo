@@ -1,5 +1,9 @@
-
-<h1 align="center"> Rottasimulaattori :rat: :moneybag:</h1>
+<div align="center">
+  <h1 align="center">Rottasimulaattori :rat: :moneybag:</h1>
+  <p align="center">
+    Try to get as much of tukikuukausi you can.
+  </p>
+</div>
 
 
 ## Dokumentaatio 📝
