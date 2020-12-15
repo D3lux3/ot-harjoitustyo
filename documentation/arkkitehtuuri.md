@@ -15,9 +15,13 @@ Ohjelmanpakkaus rakenne on kolmitasoinen.
 
 
 **Pakkausrakenne**
-![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/pakkaus.png "Pakkausrakenne.")
+
+
+![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/pakkaus1.png "Pakkausrakenne.")
 
 **UML Kaavio**
+
+
 ![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/kaavio.png "UML luonnos.")
 
 
