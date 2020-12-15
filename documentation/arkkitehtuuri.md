@@ -24,6 +24,13 @@ Ohjelmanpakkaus rakenne on kolmitasoinen.
 
 ![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/kaavio.png "UML luonnos.")
 
+## Pelilogiikka
+
+Pelinlogiikkaa hoitaa pääasiassa Gamelogic olio. GameLogic pitää kirjaa pelin pistetilanteesta. Gamelogic tarjoaa muille luokille mahdollisuuden kysellä tämän hetkistä pistetilannetta, ja myös Stage oliota käyttöliittymää varten. Pelin hahmot (Entityt) laitetaan suoraan käyttöliittymään *Gamescene*.
+
+Pelilogiikkaa kuvaa seuraava luokkakaavio:
+
+![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/luokkakaavio2.png "Luokkakaavio")
 
 
 ## Sekvenssikaavio
