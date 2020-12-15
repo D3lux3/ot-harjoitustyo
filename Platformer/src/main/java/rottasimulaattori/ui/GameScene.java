@@ -277,6 +277,8 @@ public class GameScene {
                 if (!playerAlive() || !player.getAlive()) {
                     this.stop();
                 }
+
+                previous = l;
             }
         };
         anim.start();
