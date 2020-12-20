@@ -1,7 +1,9 @@
-package rottasimulaattori.game.utils;
+package rottasimulaattori.game;
 
 import org.junit.Before;
 import org.junit.Test;
+import rottasimulaattori.game.utils.Level;
+
 import static org.junit.Assert.*;
 
 
