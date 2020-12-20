@@ -45,6 +45,24 @@ Peli päättyy jos pelaaja putoaa alas tai pääsee maaliin. Maalista saa +10 pi
 <br />
 <br />
 
+## Editor näkymä
+Kontrollit:
+```
+W  = Liiku ylös.
+D = Liiku oikealle.
+A  = Liiku vasemmalle.
+```
+
+Klikkaamalla ruutua lisätään tasoon siihen kohtaan olion(Laatikko, kolikko yms..). Monta kertaa klikkaamalla samaan kohtaan pystyy vaihtamaan haluamansa peli objektin. Klikkaamalla Save voi oman taso muutoksen tallentaa tiedostoon. Load nappia painamalla voi ladata kentän tiedostosta. Menua klikkaamalla vaihtuu näkymä takaisin päävalikkoon.
+<div align="center">
+<img align="center" src="https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/imgs/editorsc.png" width="400">
+</div>
+
+<br />
+<br />
+<br />
+<br />
+
 ## Hiscore näkymä
 
 Täältä näkee kymmenen parasta pelisuoritusta. Painamalla menu painiketta päästee takaisin päävalikkoon.
