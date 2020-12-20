@@ -187,11 +187,12 @@ public class MapEditor {
         HBox hBox = new HBox();
         Button menuButton = new Button("Menu");
         Button saveButton = new Button("Save");
+        Button loadButton = new Button("Load");
         menuButton.setOnMouseClicked(event -> {
             this.handleLevelEdit();
             this.stage.setScene(new Menu(stage, gameLogic).getMenuScene());
         });
-        hBox.getChildren().addAll(menuButton, saveButton);
+        hBox.getChildren().addAll(menuButton, saveButton, loadButton);
         return hBox;
     }
 }
