@@ -3,17 +3,19 @@ package rottasimulaattori.ui;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.*;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import rottasimulaattori.game.GameLogic;
 import rottasimulaattori.game.utils.Level;
+import rottasimulaattori.game.utils.MapHandler;
 import rottasimulaattori.ui.controls.MapEditorTile;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.HashMap;
 
 public class MapEditor {
@@ -31,8 +33,14 @@ public class MapEditor {
     public MapEditor(Stage stage, GameLogic gameLogic) {
         this.stage = stage;
         this.gameLogic = gameLogic;
-        this.gridPane = new GridPane();
         this.keys = new HashMap<>();
+    }
+
+    private void initGridPane() {
+        this.gridPane = new GridPane();
+        gridPane.setBackground(new Background(getBackgroundImage()));
+        gridPane.setMaxHeight(500);
+        gridPane.setPrefSize(500, 500);
     }
 
     /**
@@ -41,9 +49,7 @@ public class MapEditor {
      */
     public Scene getMapEditor() {
         Pane root = new Pane();
-        gridPane.setBackground(new Background(getBackgroundImage()));
-        gridPane.setMaxHeight(500);
-        gridPane.setPrefSize(500, 500);
+        initGridPane();
         setTiles();
 
         root.setMaxSize(500,600);
@@ -77,8 +83,8 @@ public class MapEditor {
      * Saves the level edits.
      */
     private void handleLevelEdit() {
-        for (int y = 0; y < Level.firstLevel.length; y++) {
-            for (int x = 0; x < Level.firstLevel[y].length(); x++) {
+        for (int y = 0; y < Level.level.length; y++) {
+            for (int x = 0; x < Level.level[y].length(); x++) {
                 Level.setValue(x,y, getNodeFromGridPane(x,y).getState());
             }
         }
@@ -103,9 +109,10 @@ public class MapEditor {
      * Sets MapEditorTiles on all level coordinates.
      */
     private void setTiles() {
-        for (int y = 0; y < Level.firstLevel.length; y++) {
-            for (int x = 0; x < Level.firstLevel[y].length(); x++) {
-                MapEditorTile tile = new MapEditorTile(Level.firstLevel[y].charAt(x));
+        this.gridPane.getChildren().clear();
+        for (int y = 0; y < Level.level.length; y++) {
+            for (int x = 0; x < Level.level[y].length(); x++) {
+                MapEditorTile tile = new MapEditorTile(Level.level[y].charAt(x));
                 gridPane.add(tile, x,y);
             }
         }
@@ -192,6 +199,41 @@ public class MapEditor {
             this.handleLevelEdit();
             this.stage.setScene(new Menu(stage, gameLogic).getMenuScene());
         });
+
+        saveButton.setOnMouseClicked(event -> {
+            this.handleLevelEdit();
+            FileChooser fc = new FileChooser();
+            fc.getExtensionFilters().add( new FileChooser.ExtensionFilter("TXT files (*.txt)", "*.txt"));
+
+            File file = fc.showSaveDialog(stage);
+
+            if (file != null) {
+                MapHandler mapHandler = new MapHandler();
+                mapHandler.saveLevel(file);
+            } else {
+                return;
+            }
+        });
+
+        loadButton.setOnMouseClicked(event -> {
+            FileChooser fc = new FileChooser();
+            fc.setTitle("Open a map");
+            fc.getExtensionFilters().add(new FileChooser.ExtensionFilter(".txt", "*.txt"));
+
+            File file = fc.showOpenDialog(stage);
+            if (file != null) {
+                MapHandler mapHandler = new MapHandler();
+                try {
+                    mapHandler.loadMap(file);
+                    this.setTiles();
+                    this.handleLevelEdit();
+                } catch (Exception e) {
+                    new Alert(Alert.AlertType.ERROR, "Loaded map is either corrupt or wrong format.").show();
+                }
+            }
+
+        });
+
         hBox.getChildren().addAll(menuButton, saveButton, loadButton);
         return hBox;
     }

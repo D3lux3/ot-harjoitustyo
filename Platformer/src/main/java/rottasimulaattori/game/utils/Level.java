@@ -13,7 +13,7 @@ public class Level {
      * G = Goal
      */
     @SuppressWarnings("checkstyle:Indentation")
-    public static String[] firstLevel = new String[] {
+    public static String[] level = new String[] {
             "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
             "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
             "00000C0000000000000000000000000000000000C0000000000000000000000000000000000000000000000C00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
@@ -36,9 +36,9 @@ public class Level {
      */
     public static void setValue(int x, int y, char value) {
         StringBuilder sb = new StringBuilder();
-        sb.append(firstLevel[y]);
+        sb.append(level[y]);
         sb.setCharAt(x, value);
-        firstLevel[y] = sb.toString();
+        level[y] = sb.toString();
     }
 
     /**
@@ -48,7 +48,7 @@ public class Level {
      * @return Returns char on given x and y
      */
     public static char getValue(int x, int y) {
-        return firstLevel[y].charAt(x);
+        return level[y].charAt(x);
     }
 
 }

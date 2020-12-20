@@ -56,10 +56,10 @@ public class GameScene {
     private void initContent() {
         Entity bg = new Entity(500,500);
         bg.setBGImage("backgroundMenu.png");
-        levelWidth = Level.firstLevel[0].length() * 60;
-        levelHeight = Level.firstLevel.length * 60;
-        for (int i = 0; i < Level.firstLevel.length; i++) {
-            String line = Level.firstLevel[i];
+        levelWidth = Level.level[0].length() * 60;
+        levelHeight = Level.level.length * 60;
+        for (int i = 0; i < Level.level.length; i++) {
+            String line = Level.level[i];
             for (int j = 0; j < line.length(); j++) {
                 switch(line.charAt(j)) {
                     case '0':

@@ -104,6 +104,7 @@
                         <exclude>rottasimulaattori/ui/controls/*</exclude>
                         <exclude>rottasimulaattori/Main</exclude>
                         <exclude>rottasimulaattori/UiMain</exclude>
+                        <exclude>rottasimulaattori/Game/MapHandler</exclude>
                     </excludes>
                 </configuration>
                 <executions>
