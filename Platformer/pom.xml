@@ -27,6 +27,19 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>15.0.1</version>
+            <classifier>linux</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>15.0.1</version>
+            <classifier>mac</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>15.0.1</version>
+            <classifier>win</classifier>
         </dependency>
     </dependencies>
     <build>
@@ -89,7 +102,6 @@
                     <excludes>
                         <exclude>rottasimulaattori/ui/*</exclude>
                         <exclude>rottasimulaattori/ui/controls/*</exclude>
-                        <exclude>rottasimulaattori/game/utils/Level</exclude>
                         <exclude>rottasimulaattori/Main</exclude>
                         <exclude>rottasimulaattori/UiMain</exclude>
                     </excludes>
