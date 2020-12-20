@@ -17,7 +17,7 @@ public class UiMain extends Application {
 
     /**
      * Handles the starting of the stage.
-     * @param stage
+     * @param stage Stage
      */
     public void start(Stage stage) {
         stage.setTitle("Rottasimulaattori");

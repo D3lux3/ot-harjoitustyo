@@ -1,4 +1,5 @@
 package rottasimulaattori.game.entities;
+
 /**
  * Ingame Flag entity.
  * It inherits entity.

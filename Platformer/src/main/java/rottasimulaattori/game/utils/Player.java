@@ -10,8 +10,8 @@ public class Player {
 
     /**
      * Creates a player object with a name and a score.
-     * @param name
-     * @param score
+     * @param name name
+     * @param score score
      */
     public Player(String name, int score) {
         this.name = name;
@@ -45,7 +45,7 @@ public class Player {
 
     /**
      * Returns player name.
-     * @return
+     * @return Returns player name.
      */
     public String getName() {
         return name;
@@ -53,7 +53,7 @@ public class Player {
 
     /**
      * Sets name for the player object.
-     * @param name
+     * @param name Sets name for the player object.
      */
     public void setName(String name) {
         this.name = name;
@@ -61,7 +61,7 @@ public class Player {
 
     /**
      * Returns player score.
-     * @return
+     * @return Returns player score.
      */
     public int getScore() {
         return score;
@@ -69,7 +69,7 @@ public class Player {
 
     /**
      * Sets players score.
-     * @param score
+     * @param score Sets players score.
      */
     public void setScore(int score) {
         this.score = score;

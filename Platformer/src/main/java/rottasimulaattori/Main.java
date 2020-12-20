@@ -6,7 +6,7 @@ package rottasimulaattori;
 public class Main {
     /**
      * Launches another main method. This is one pretty much useless.
-     * @param args
+     * @param args args
      */
     public static void main(String[] args) {
         UiMain.main(args);

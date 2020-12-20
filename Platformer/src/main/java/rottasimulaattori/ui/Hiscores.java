@@ -26,8 +26,8 @@ public class Hiscores {
 
     /**
      * Creates Hiscores object.
-     * @param stage
-     * @param gameLogic
+     * @param stage Stage
+     * @param gameLogic GameLogic
      */
     public Hiscores(Stage stage, GameLogic gameLogic) {
         this.gameLogic = gameLogic;
@@ -36,7 +36,7 @@ public class Hiscores {
 
     /**
      * Returns hiscores scene.
-     * @return
+     * @return Returns hiscores scene
      */
     public Scene getHighscoreScene() {
         BorderPane borderPane = new BorderPane();
@@ -75,7 +75,7 @@ public class Hiscores {
 
     /**
      * Returns the header part of the hiscores.
-     * @return
+     * @return Returns the header part of the hiscores.
      */
     private HBox header() {
         HBox hBox = new HBox();
@@ -89,7 +89,7 @@ public class Hiscores {
 
     /**
      * Returns the footer that handles transition back to main menu and adds nice styles for it.
-     * @return
+     * @return  Returns the footer that handles transition back to main menu and adds nice styles for it.
      */
     private HBox footer() {
         HBox hBox = new HBox();
@@ -105,7 +105,7 @@ public class Hiscores {
 
     /**
      * Gets top 10 players from the Database access object and adds them to an list.
-     * @return
+     * @return Returns top 10 players
      */
     private ArrayList<PlatformerLabel> getLabels() {
         HiscoresDao dao = new HiscoresDao("hiscores");
@@ -118,7 +118,7 @@ public class Hiscores {
 
     /**
      * Returns the background image.
-     * @return
+     * @return Returns the background image.
      */
     private BackgroundImage getBackgroundImage() {
         Image bgImage = new Image("backgroundMenu.png");

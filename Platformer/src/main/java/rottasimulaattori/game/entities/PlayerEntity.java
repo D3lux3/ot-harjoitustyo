@@ -18,8 +18,8 @@ public class PlayerEntity extends Entity {
     /**
      * Constructor that creates PlayerEntity with given width and height parameters.
      * It sets 2d sprite for the player in this constructor.
-     * @param width
-     * @param height
+     * @param width Width
+     * @param height Height
      */
     public PlayerEntity(double width, double height) {
         super(width, height);
@@ -33,9 +33,9 @@ public class PlayerEntity extends Entity {
      * Constructor that creates PlayerEntity with given width and height parameters.
      * This constructor is mainly only for testing purposes only, because JavaFx and JUnit doesn't get along.
      * This constructor skips loading of the 2d sprite and uses random RGB color instead.
-     * @param width
-     * @param height
-     * @param nobg
+     * @param width Width
+     * @param height Height
+     * @param nobg No background for testing purposes
      */
     public PlayerEntity(double width, double height, boolean nobg) {
         super(width, height);
@@ -48,7 +48,7 @@ public class PlayerEntity extends Entity {
     /**
      * Changes 2d sprite depending on player moving direction.
      * If player moves right it sets 2d sprite to face right and vice versa.
-     * @param movingRight
+     * @param movingRight Is player moving right
      */
     private void handleAnimation(boolean movingRight) {
         if (movingRight) {
@@ -80,8 +80,8 @@ public class PlayerEntity extends Entity {
     /**
      * Moves player given value on X axis either left or right.
      * It takes all the platforms as a parameter and checks for collisions.
-     * @param value
-     * @param platforms
+     * @param value How much player should move
+     * @param platforms All the platform entities in game.
      */
     public void moveX(int value, List<Entity> platforms) {
         boolean movingRight = value > 0;
@@ -106,8 +106,8 @@ public class PlayerEntity extends Entity {
     /**
      * Moves player given value on Y axis either up or down.
      * It takes all the platforms as a parameter and checks for collisions.
-     * @param value
-     * @param platforms
+     * @param value How much player should move
+     * @param platforms All the platform entities in game.
      */
     public void moveY(int value, List<Entity> platforms) {
         boolean movingDown = value > 0;
@@ -143,7 +143,7 @@ public class PlayerEntity extends Entity {
 
     /**
      * Returns player velocity.
-     * @return
+     * @return Returns player velocity
      */
     public Point2D getVelocity() {
         return this.playerVelocity;
@@ -151,8 +151,8 @@ public class PlayerEntity extends Entity {
 
     /**
      * Sets players velocity.
-     * @param x
-     * @param y
+     * @param x x
+     * @param y y
      */
     public void setPlayerVelocity(double x, double y) {
         playerVelocity = playerVelocity.add(x, y);
@@ -167,7 +167,7 @@ public class PlayerEntity extends Entity {
 
     /**
      * Gets alive boolean.
-     * @return
+     * @return Returns Players alive value
      */
     public boolean getAlive() {
         return this.alive;

@@ -18,7 +18,7 @@ public class HiscoresDao {
     /**
      * Creates Hiscores object.
      * Takes a string as a parameter which will be the database's filename.
-     * @param dbUrl
+     * @param dbUrl Database url
      */
     public HiscoresDao(String dbUrl) {
         this.url = "jdbc:sqlite:" +  dbUrl + ".db";
@@ -28,7 +28,7 @@ public class HiscoresDao {
 
     /**
      * SQL Query that creates the table if it does not exists.
-     * @return
+     * @return Returns sql query
      */
     private String createTable() {
         return "CREATE TABLE IF NOT EXISTS hiscores(" +
@@ -40,7 +40,7 @@ public class HiscoresDao {
     /**
      * SQL Query that removes all entries from the hiscores table.
      * Mainly for testing purposes.
-     * @return
+     * @return Returns sql query
      */
     private String removeAllEntries() {
         return "DELETE FROM hiscores";
@@ -48,7 +48,7 @@ public class HiscoresDao {
 
     /**
      * SQL Query that returns top ten best hiscores from the table ordered by score.
-     * @return
+     * @return Returns sql query
      */
     private String getTopTenHiscores() {
         return "SELECT playerName, score FROM hiscores ORDER BY score DESC LIMIT 10";
@@ -56,7 +56,7 @@ public class HiscoresDao {
 
     /**
      * SQL Query that adds given values to the table.
-     * @return
+     * @return Returns sql query
      */
     private String addPlayerQuery() {
         return "INSERT INTO hiscores(playerName, score) VALUES(?,?)";
@@ -96,7 +96,7 @@ public class HiscoresDao {
 
     /**
      * Saves given Player object to the database.
-     * @param player
+     * @param player Player object
      */
     public void saveScores(Player player) {
         try (Connection conn = DriverManager.getConnection(url);
@@ -111,7 +111,7 @@ public class HiscoresDao {
 
     /**
      * Returns top 10 best player scores and returns them.
-     * @return
+     * @return Returns list with populated top 10 best player scores and returns them.
      */
     public List<Player> getScores() {
         List<Player> players = new ArrayList<>();

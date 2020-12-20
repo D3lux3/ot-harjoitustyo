@@ -25,8 +25,8 @@ public class MapEditor {
 
     /**
      * Creates MapEditor object
-     * @param stage
-     * @param gameLogic
+     * @param stage Stage
+     * @param gameLogic GameLogic
      */
     public MapEditor(Stage stage, GameLogic gameLogic) {
         this.stage = stage;
@@ -37,7 +37,7 @@ public class MapEditor {
 
     /**
      * Returns MapEditor scene
-     * @return
+     * @return Returns MapEditor scene
      */
     public Scene getMapEditor() {
         Pane root = new Pane();
@@ -86,9 +86,9 @@ public class MapEditor {
 
     /**
      * Returns specific tile on the gridpane on given coordinates.
-     * @param x
-     * @param y
-     * @return
+     * @param x x
+     * @param y y
+     * @return Returns specific tile on the gridpane on given coordinates.
      */
     private MapEditorTile getNodeFromGridPane(int x, int y) {
         for (Node node : gridPane.getChildren()) {
@@ -113,8 +113,8 @@ public class MapEditor {
 
     /**
      * Returns boolean if given key is pressed
-     * @param k
-     * @return
+     * @param k k
+     * @return Returns boolean if given key is pressed
      */
     private boolean isPressed(KeyCode k) {
         return this.keys.getOrDefault(k, false);
@@ -170,7 +170,7 @@ public class MapEditor {
 
     /**
      * Returns the background image.
-     * @return
+     * @return Returns the background image.
      */
     private BackgroundImage getBackgroundImage() {
         Image bgImage = new Image("backgroundMenu.png");
@@ -181,7 +181,7 @@ public class MapEditor {
     /**
      *
      * Returns the up left corner menu.
-     * @return
+     * @return Returns the up left corner menu.
      */
     private HBox menuHBox() {
         HBox hBox = new HBox();

@@ -34,7 +34,7 @@ public class GameScene {
 
     /**
      * Constructor that initializes the game. Requires a gamelogic as parameter.
-     * @param gameLogic
+     * @param gameLogic GameLogic
      */
     public GameScene(GameLogic gameLogic) {
         this.gameLogic = gameLogic;
@@ -110,8 +110,8 @@ public class GameScene {
 
     /**
      * Check if key is pressed, if key is not present in the map. Returns false.
-     * @param key
-     * @return
+     * @param key Pressed key
+     * @return Returns if key is pressed
      */
     private boolean keyPressed(KeyCode key) {
         return this.keys.getOrDefault(key, false);
@@ -119,12 +119,12 @@ public class GameScene {
 
     /**
      * Creates a Entity object to given coordinates with given width and height. Also requires path to 2d sprite.
-     * @param x
-     * @param y
-     * @param w
-     * @param h
-     * @param path
-     * @return
+     * @param x x
+     * @param y y
+     * @param w w
+     * @param h h
+     * @param path File path
+     * @return Returns Entity
      */
     private Entity createEntity(int x, int y, int w, int h, String path) {
         Entity entity = new Entity(w, h);
@@ -137,9 +137,9 @@ public class GameScene {
 
     /**
      * Creates a Coinentity to given parameters.
-     * @param x
-     * @param y
-     * @return
+     * @param x x
+     * @param y y
+     * @return Returns CoinEntity
      */
     private CoinEntity createCoinEntity(int x, int y) {
         CoinEntity coinEntity = new CoinEntity(50,50);
@@ -152,9 +152,9 @@ public class GameScene {
 
     /**
      * Creates a GoalEntity to given parameters.
-     * @param x
-     * @param y
-     * @return
+     * @param x x
+     * @param y y
+     * @return Returns GoalEntity
      */
     private GoalEntity createGoalEntity(int x, int y) {
         GoalEntity goalEntity = new GoalEntity();
@@ -167,9 +167,9 @@ public class GameScene {
 
     /**
      * Creates and returns a player entity to given coordinates..
-     * @param x
-     * @param y
-     * @return
+     * @param x x
+     * @param y y
+     * @return Returns PlayerEntity
      */
     private PlayerEntity createPlayerEntity(int x, int y) {
         PlayerEntity playerEntity = new PlayerEntity(40, 40);
@@ -181,7 +181,7 @@ public class GameScene {
 
     /**
      * Checks if player has dropped from the level and handles game ending.
-     * @return
+     * @return Returns if player is alive
      */
     private boolean playerAlive() {
         if (player.getTranslateY() > levelHeight) {
@@ -258,7 +258,7 @@ public class GameScene {
 
     /**
      * Returns the gamescene.
-     * @return
+     * @return Returns GameScene
      */
     public Scene getGameScene() {
         initContent();

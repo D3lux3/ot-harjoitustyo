@@ -27,8 +27,8 @@ public class EndGameScene {
      * Creates EndGameScene object.
      * Takes in stage and gameLogic as a parameter.
      * It gets required details off the last game from given gamelogic.
-     * @param gameLogic
-     * @param stage
+     * @param gameLogic Gamelogic
+     * @param stage Stage
      */
     public EndGameScene(GameLogic gameLogic, Stage stage) {
         this.gameLogic = gameLogic;
@@ -37,8 +37,8 @@ public class EndGameScene {
 
     /**
      * Returns the endgame scene.
-     * @param score
-     * @return
+     * @param score Score
+     * @return Returns Scene
      */
     public Scene getEndGameScene(int score) {
         BorderPane borderPane = new BorderPane();
@@ -81,8 +81,8 @@ public class EndGameScene {
     /**
      * Shows points in the endgame scene.
      * Adds nice effects to the text.
-     * @param score
-     * @return
+     * @param score Score
+     * @return Returns styled Label.
      */
     private HBox scoreLabel(int score){
         HBox hbox = new HBox();

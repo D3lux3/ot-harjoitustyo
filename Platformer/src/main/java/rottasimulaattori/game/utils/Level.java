@@ -30,9 +30,9 @@ public class Level {
 
     /**
      * Sets a char on a given coordinates
-     * @param x
-     * @param y
-     * @param value
+     * @param x x
+     * @param y y
+     * @param value Value to be set
      */
     public static void setValue(int x, int y, char value) {
         StringBuilder sb = new StringBuilder();
@@ -43,9 +43,9 @@ public class Level {
 
     /**
      * Gets char on given coordinates.
-     * @param x
-     * @param y
-     * @return
+     * @param x x
+     * @param y y
+     * @return Returns char on given x and y
      */
     public static char getValue(int x, int y) {
         return firstLevel[y].charAt(x);

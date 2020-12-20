@@ -18,7 +18,7 @@ public class PlatformerButton extends Button {
     /**
      * Creates a button with custom styles.
      * Takes string as a parameter that is the buttons text.
-     * @param text
+     * @param text text
      */
     public PlatformerButton(String text) {
         setText(text);

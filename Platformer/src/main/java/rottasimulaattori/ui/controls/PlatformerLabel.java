@@ -15,7 +15,7 @@ public class PlatformerLabel extends Label {
     /**
      * Custom label with custom font.
      * Sets labels text to parameter.
-     * @param text
+     * @param text text
      */
     public PlatformerLabel(String text) {
         setText(text);

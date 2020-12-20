@@ -10,8 +10,8 @@ public class CoinEntity extends Entity {
     /**
      * Creates CoinEntity object. With given width and height.
      * Adds 2d coin sprite on creation.
-     * @param width
-     * @param height
+     * @param width Width
+     * @param height Height
      */
     public CoinEntity(double width , double height) {
         super(width, height);

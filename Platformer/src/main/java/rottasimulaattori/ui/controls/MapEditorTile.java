@@ -17,7 +17,7 @@ public class MapEditorTile extends Button {
 
     /**
      * Constructor for MapEditorTile.
-     * @param c
+     * @param c Char
      */
     public MapEditorTile(char c) {
         this.setMinSize(36, 50);
@@ -28,7 +28,7 @@ public class MapEditorTile extends Button {
 
     /**
      * Returns the next state. E.g if state is now 0 (Empty) next state would be 1(Box).
-     * @return
+     * @return Returns the next char.
      */
     private char nextState() {
         for (int i = 0; i < states.length; i++) {
@@ -52,7 +52,7 @@ public class MapEditorTile extends Button {
 
     /**
      * Handles the fx-css change for each state change.
-     * @param c
+     * @param c char
      */
     private void handleStateStyle(char c) {
         switch (c) {
@@ -104,7 +104,7 @@ public class MapEditorTile extends Button {
 
     /**
      * Returns current state.
-     * @return
+     * @return Returns current state.
      */
     public char getState(){
         return this.state;

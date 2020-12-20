@@ -25,8 +25,8 @@ public class Menu {
 
     /**
      * Creates Menu object.
-     * @param stage
-     * @param gameLogic
+     * @param stage Stage
+     * @param gameLogic GameLogic
      */
     public Menu(Stage stage, GameLogic gameLogic) {
         this.stage = stage;
@@ -62,7 +62,7 @@ public class Menu {
 
     /**
      * Returns the menu scene.
-     * @return
+     * @return Returns the menu scene.
      */
     public Scene getMenuScene() {
         BorderPane borderPane = new BorderPane();
@@ -88,7 +88,7 @@ public class Menu {
 
     /**
      * Returns the pixelated Kela logo.
-     * @return
+     * @return Returns the pixelated Kela logo.
      */
     private ImageView getLogo() {
         ImageView logo = new ImageView("logo.png");
@@ -104,7 +104,7 @@ public class Menu {
 
     /**
      * Returns the background image.
-     * @return
+     * @return Returns the background image.
      */
     private BackgroundImage getBackgroundImage() {
         Image bgImage = new Image("backgroundMenu.png");

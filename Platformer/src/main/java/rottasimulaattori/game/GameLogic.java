@@ -17,7 +17,7 @@ public class GameLogic {
     /**
      * Creates GameLogic object.
      * Takes stage as a parameter for future scene change purposes.
-     * @param stage
+     * @param stage Stage
      */
     public GameLogic(Stage stage) {
         this.score = 0;
@@ -40,6 +40,7 @@ public class GameLogic {
 
     /**
      * Adds score by given amount.
+     * @param score Adds score by given amount.
      */
     public void addScore(int score) {
         this.score += score;
@@ -47,7 +48,7 @@ public class GameLogic {
 
     /**
      * Returns score.
-     * @return
+     * @return Returns score as int
      */
     public int getScore() {
         return this.score;
@@ -62,7 +63,7 @@ public class GameLogic {
 
     /**
      * Returns Stage object.
-     * @return
+     * @return Returns stage
      */
     public Stage getStage() {
         return this.stage;
@@ -70,7 +71,7 @@ public class GameLogic {
 
     /**
      * Handles scene change.
-     * @param scene
+     * @param scene Scene
      */
     public void changeScene(Scene scene) {
         this.stage.setScene(scene);
