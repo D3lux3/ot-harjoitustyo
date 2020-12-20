@@ -10,7 +10,7 @@ public class GoalEntity extends Entity {
      * Creates a Flag entity object.
      * Sets proper sprite and sizing to it.
      */
-    public GoalEntity(){
+    public GoalEntity() {
         super(50, 64);
         this.setBGImage("finish.png");
     }

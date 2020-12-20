@@ -42,7 +42,7 @@ public class GameLogic {
      * Adds score by given amount.
      */
     public void addScore(int score) {
-        this.score+= score;
+        this.score += score;
     }
 
     /**
