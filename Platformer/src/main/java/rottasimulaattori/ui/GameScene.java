@@ -30,7 +30,7 @@ public class GameScene {
     private Label scoreLabel;
     private int levelWidth;
     private int levelHeight;
-    private GoalEntity goal;
+    private List<GoalEntity> goals;
 
     /**
      * Constructor that initializes the game. Requires a gamelogic as parameter.
@@ -43,6 +43,7 @@ public class GameScene {
         this.coins = new ArrayList<>();
         this.scoreLabel = new Label("Score: " + this.gameLogic.getScore());
         this.scoreLabel.setTextFill(Color.WHITE);
+        this.goals = new ArrayList<>();
     }
 
     /**
@@ -71,7 +72,7 @@ public class GameScene {
                         coins.add(this.createCoinEntity(j * 36, i * 50));
                         break;
                     case 'G':
-                        this.goal = this.createGoalEntity(j * 36, i * 50);
+                        this.goals.add(this.createGoalEntity(j * 36, i * 50));
                 }
             }
         }
@@ -234,14 +235,16 @@ public class GameScene {
      * Check for collision between player and the goal.
      */
     private void checkForGoalCollision() {
-        if (this.goal == null) {
+        if (this.goals.isEmpty()) {
             return;
         }
 
-        if (player.getBoundsInParent().intersects(this.goal.getBoundsInParent())){
-            this.gameLogic.addScore(10);
-            this.player.killPlayer();
-            this.gameOver();
+        for (GoalEntity g : this.goals) {
+            if (player.getBoundsInParent().intersects(g.getBoundsInParent())){
+                this.gameLogic.addScore(10);
+                this.player.killPlayer();
+                this.gameOver();
+            }
         }
     }
 

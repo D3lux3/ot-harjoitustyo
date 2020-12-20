@@ -18,6 +18,7 @@ public class Menu {
 
     private PlatformerButton startButton;
     private PlatformerButton highscoreButton;
+    private PlatformerButton mapEditorButton;
     private PlatformerButton exitButton;
     private Stage stage;
     private GameLogic gameLogic;
@@ -31,6 +32,7 @@ public class Menu {
         this.stage = stage;
         this.gameLogic = gameLogic;
         this.startButton = new PlatformerButton("START");
+        this.mapEditorButton = new PlatformerButton("EDITOR");
         this.highscoreButton = new PlatformerButton("HISCORES");
         this.exitButton = new PlatformerButton("EXIT");
         setButtonHandlers();
@@ -42,6 +44,10 @@ public class Menu {
     private void setButtonHandlers() {
         this.startButton.setOnMousePressed((event -> {
             stage.setScene(new GameScene(gameLogic).getGameScene());
+        }));
+
+        this.mapEditorButton.setOnMousePressed((event -> {
+            stage.setScene(new MapEditor(stage, gameLogic).getMapEditor());
         }));
 
         exitButton.setOnMousePressed((event -> {
@@ -62,6 +68,7 @@ public class Menu {
         BorderPane borderPane = new BorderPane();
         VBox buttons = new VBox();
         buttons.getChildren().addAll(startButton,
+                mapEditorButton,
                 highscoreButton,
                 exitButton);
 

@@ -32,6 +32,9 @@ Pelilogiikkaa kuvaa seuraava luokkakaavio:
 
 ![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/luokkakaavio2.png "Luokkakaavio")
 
+## Päätoiminnallisuudet
+
+
 
 ## Sekvenssikaavio
 ### Pelinlogiikka
