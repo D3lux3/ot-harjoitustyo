@@ -28,4 +28,12 @@ public class Level {
             "111111110011110001111100111111000100000000000000000000000000000000000000000000000000000000000000000000000000111100000000000000000000000000000000000000000000000000000000000000000000"
     };
 
+
+    public static void setValue(int x, int y, char value) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(firstLevel[y]);
+        sb.setCharAt(x, value);
+        firstLevel[y] = sb.toString();
+    }
+
 }
