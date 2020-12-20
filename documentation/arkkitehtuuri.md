@@ -34,4 +34,8 @@ Pelilogiikkaa kuvaa seuraava luokkakaavio:
 
 
 ## Sekvenssikaavio
+### Pelinlogiikka
 ![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/sekvenssi.png "Sekvenssikaavio")
+
+### Hiscorejen tallennus
+![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/daosekvenssi.png "Sekvenssikaavio")
