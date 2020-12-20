@@ -18,7 +18,7 @@ java -jar platformer.jar
 - Exit
   - Sulkee sovelluksen
 <div align="center">
-<img align="center" src="https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/menusc.png" width="400">
+<img align="center" src="https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/img/menusc.png" width="400">
 </div>
 <br />
 <br />
@@ -37,7 +37,7 @@ Pelin ideana on kerätä kuvassa näkyviä kolikkoja(tukikuukausia).
 Peli päättyy jos pelaaja putoaa alas tai pääsee maaliin. Maalista saa +10 pistettä.
 
 <div align="center">
-<img align="center" src="https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/pelisc.png" width="400">
+<img align="center" src="https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/img/pelisc.png" width="400">
 </div>
 
 <br />
@@ -49,7 +49,7 @@ Peli päättyy jos pelaaja putoaa alas tai pääsee maaliin. Maalista saa +10 pi
 
 Täältä näkee kymmenen parasta pelisuoritusta. Painamalla menu painiketta päästee takaisin päävalikkoon.
 <div align="center">
-<img align="center" src="https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/hiscoresc.png" width="400">
+<img align="center" src="https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/img/hiscoresc.png" width="400">
 </div>
 
 <br />
@@ -62,5 +62,5 @@ Täältä näkee kymmenen parasta pelisuoritusta. Painamalla menu painiketta pä
 
 Tänne on tarkoitus pelin jälkeen kirjoittaa pelaajan nimi, jotta se saadaan talletettua tietokantaan ja näkyviin hiscore näkymään.
 <div align="center">
-<img align="center" src="https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/endgamesc.png" width="400">
+<img align="center" src="https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/img/endgamesc.png" width="400">
 </div>
