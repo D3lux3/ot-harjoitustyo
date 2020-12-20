@@ -41,6 +41,7 @@ public class MapHandler {
                 level[y] = line;
                 y++;
             }
+            fileReader.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
