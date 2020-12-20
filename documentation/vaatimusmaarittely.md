@@ -7,7 +7,7 @@ Sovellukseni tulee olemaan 2d seikkailu peli. Pelissä pelataan rotalla, jonka t
 
 
 ### Käyttöliittymäluonnos
-![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/imgs/luonnos.png "UML luonnos")
+![alt text](https://raw.githubusercontent.com/D3lux3/ratsimulator/master/documentation/imgs/luonnos.png "UML luonnos")
 
 ## Toiminallisuus
 

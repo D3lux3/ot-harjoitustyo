@@ -20,4 +20,4 @@ Kaikkea muuta paitsi käyttöliittymää ja Main olioita testataan. Yksittäisi�
 
 Rivikattavuus on 70%
 
-![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/imgs/kattavuus.png "Testikattavuus")
+![alt text](https://raw.githubusercontent.com/D3lux3/ratsimulator/master/documentation/imgs/kattavuus.png "Testikattavuus")
