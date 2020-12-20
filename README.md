@@ -8,6 +8,7 @@
 
 ## Dokumentaatio 📝
 - [Käyttöohje](https://github.com/D3lux3/ot-harjoitustyo/blob/master/documentation/kayttoohje.md) :scroll:
+- [Testaus](https://github.com/D3lux3/ratsimulator/blob/master/documentation/testaus.md) :test_tube:
 - [Tuntikirjanpito](https://github.com/D3lux3/ot-harjoitustyo/blob/master/documentation/tuntikirjanpito.md) :hourglass_flowing_sand:
 - [Vaatimusmäärittely](https://github.com/D3lux3/ot-harjoitustyo/blob/master/documentation/vaatimusmaarittely.md)
 - [Arkkitehtuuri](https://github.com/D3lux3/ot-harjoitustyo/blob/master/documentation/arkkitehtuuri.md)
