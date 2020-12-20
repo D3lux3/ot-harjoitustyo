@@ -21,3 +21,10 @@ Kaikkea muuta paitsi käyttöliittymää ja Main olioita testataan. Yksittäisi�
 Rivikattavuus on 70%
 
 ![alt text](https://raw.githubusercontent.com/D3lux3/ratsimulator/master/documentation/imgs/kattavuus.png "Testikattavuus")
+
+## Järjestelmätestaus
+
+Peliä on kokeiltu manuaalisesti kahdella eri käyttöjärjestelmällä (Windows & Linux). Törmäsin ongelmiin JavaFXn ja eri käyttöjärjestelmien kanssa, vaikka laitoin pom.xml tiedostoon käyttöjärjestelmä riippuvaiset OpenJFX versiot.
+
+## Sovellukseen jääneet laatuongelmat
+Jostain tuntemattomasta syystä pelissä oleva fontti, ei lataudu kun pelin avaa jar tiedostosta.
