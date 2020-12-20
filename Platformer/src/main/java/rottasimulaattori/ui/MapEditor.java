@@ -12,6 +12,8 @@ import rottasimulaattori.game.GameLogic;
 import rottasimulaattori.game.utils.Level;
 import rottasimulaattori.ui.controls.MapEditorTile;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.HashMap;
 
 public class MapEditor {
@@ -109,7 +111,7 @@ public class MapEditor {
     }
 
     private void update() {
-        if ( isPressed(KeyCode.RIGHT) || isPressed(KeyCode.D) ) {
+        if (isPressed(KeyCode.RIGHT) || isPressed(KeyCode.D) ) {
             this.moveCameraRight();
         }
         if (isPressed(KeyCode.A)  || isPressed(KeyCode.LEFT)) {
@@ -133,14 +135,18 @@ public class MapEditor {
         return backgroundImage;
     }
 
+
     private HBox menuHBox() {
         HBox hBox = new HBox();
         Button menuButton = new Button("Menu");
+        Button saveButton = new Button("Save");
         menuButton.setOnMouseClicked(event -> {
             this.handleLevelEdit();
             this.stage.setScene(new Menu(stage, gameLogic).getMenuScene());
         });
-        hBox.getChildren().addAll(menuButton);
+        
+
+        hBox.getChildren().addAll(menuButton, saveButton);
         return hBox;
     }
 }
