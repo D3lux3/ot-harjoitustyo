@@ -52,7 +52,7 @@ W  = Liiku ylös.
 D = Liiku oikealle.
 A  = Liiku vasemmalle.
 ```
-
+Tässä näkymässä voi pelin kenttää muuttaa haluamallasi tavalla.
 Klikkaamalla ruutua lisätään tasoon siihen kohtaan olion(Laatikko, kolikko yms..). Monta kertaa klikkaamalla samaan kohtaan pystyy vaihtamaan haluamansa peli objektin. Klikkaamalla Save voi oman taso muutoksen tallentaa tiedostoon. Load nappia painamalla voi ladata kentän tiedostosta. Menua klikkaamalla vaihtuu näkymä takaisin päävalikkoon.
 <div align="center">
 <img align="center" src="https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/imgs/editorsc.png" width="400">
