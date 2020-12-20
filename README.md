@@ -22,10 +22,13 @@ Projektin testaus tapahtuu komenolla
 JavaDocin generointi tapahtuu komenolla
 
 ```mvn javadoc:javadoc```
+JavaDocin saa auki navigoimalla target/site/apidocs/index.html ja avaamalla sen selaimella.
 
 Jacoco testikattavuus raportin generointi tapahtuu komennolla
 
 ```mvn test jacoco:report```
+
+Jacocon testiraportin saa auki navigoimalla target/site/jacoco/index.html ja avaamalla sen selaimella.
 
 Checkstylen tarkistus tapahtuu komennolla
 
