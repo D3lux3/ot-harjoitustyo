@@ -17,12 +17,12 @@ Ohjelmanpakkaus rakenne on kolmitasoinen.
 **Pakkausrakenne**
 
 
-![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/img/pakkaus1.png "Pakkausrakenne.")
+![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/imgs/pakkaus1.png "Pakkausrakenne.")
 
 **UML Kaavio**
 
 
-![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/img/kaavio.png "UML luonnos.")
+![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/imgs/kaavio.png "UML luonnos.")
 
 ## Pelilogiikka
 
@@ -30,7 +30,7 @@ Pelinlogiikkaa hoitaa pääasiassa Gamelogic olio. GameLogic pitää kirjaa peli
 
 Pelilogiikkaa kuvaa seuraava luokkakaavio:
 
-![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/img/luokkakaavio2.png "Luokkakaavio")
+![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/imgs/luokkakaavio2.png "Luokkakaavio")
 
 ## Päätoiminnallisuudet
 
@@ -38,7 +38,7 @@ Pelilogiikkaa kuvaa seuraava luokkakaavio:
 
 ## Sekvenssikaavio
 ### Pelinlogiikka
-![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/img/sekvenssi.png "Sekvenssikaavio")
+![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/imgs/sekvenssi.png "Sekvenssikaavio")
 
 ### Hiscorejen tallennus
-![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/img/daosekvenssi.png "Sekvenssikaavio")
+![alt text](https://raw.githubusercontent.com/D3lux3/ot-harjoitustyo/master/documentation/imgs/daosekvenssi.png "Sekvenssikaavio")
