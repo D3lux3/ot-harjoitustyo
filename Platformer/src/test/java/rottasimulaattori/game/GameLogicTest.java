@@ -12,6 +12,13 @@ public class GameLogicTest {
         gameLogic = new GameLogic();
     }
 
+
+    @Test
+    public void addingCustomScoreIncreasesScore() {
+        gameLogic.addScore(50);
+        assertEquals(50, gameLogic.getScore());
+    }
+
     @Test
     public void clickingIncreasesScore() {
         gameLogic.addScore();

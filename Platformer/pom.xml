@@ -26,7 +26,7 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>12.0.2</version>
+            <version>15.0.1</version>
         </dependency>
     </dependencies>
     <build>
@@ -90,6 +90,8 @@
                         <exclude>rottasimulaattori/ui/*</exclude>
                         <exclude>rottasimulaattori/ui/controls/*</exclude>
                         <exclude>rottasimulaattori/game/utils/Level</exclude>
+                        <exclude>rottasimulaattori/Main</exclude>
+                        <exclude>rottasimulaattori/UiMain</exclude>
                     </excludes>
                 </configuration>
                 <executions>

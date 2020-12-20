@@ -3,6 +3,8 @@ package rottasimulaattori.game;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import javax.annotation.processing.Generated;
+
 /**
  * This class keeps track of the current game score.
  * And handling scene changes.
@@ -21,7 +23,6 @@ public class GameLogic {
         this.score = 0;
         this.stage = stage;
     }
-
     /**
      * Creates GameLogic object.
      * This constructor is for testing purposes only.

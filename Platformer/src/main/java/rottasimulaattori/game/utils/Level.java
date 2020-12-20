@@ -28,12 +28,27 @@ public class Level {
             "111111110011110001111100111111000100000000000000000000000000000000000000000000000000000000000000000000000000111100000000000000000000000000000000000000000000000000000000000000000000"
     };
 
-
+    /**
+     * Sets a char on a given coordinates
+     * @param x
+     * @param y
+     * @param value
+     */
     public static void setValue(int x, int y, char value) {
         StringBuilder sb = new StringBuilder();
         sb.append(firstLevel[y]);
         sb.setCharAt(x, value);
         firstLevel[y] = sb.toString();
+    }
+
+    /**
+     * Gets char on given coordinates.
+     * @param x
+     * @param y
+     * @return
+     */
+    public static char getValue(int x, int y) {
+        return firstLevel[y].charAt(x);
     }
 
 }

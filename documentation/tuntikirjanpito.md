@@ -15,4 +15,8 @@
 | 09.12. | 5    | Tutustuttu 2D pelien tekemiseen.|
 | 10.12. | 11    | Pelin peli osuus nyt tehtynä.|
 | 14.12. | 4    | JavaDocit ja dokumentaation parantelua|
-| yht   | 67   | | 
+| 18.12. | 6    | Map editorin suunnittelu ja pohjatotetutus|
+| 19.12. | 6    | Map editori valmis muutamaa ominaisuutta vajaana|
+| 20.12. | 4    | Dokumentaation parantelua|
+| yht   | 83   | | 
+
